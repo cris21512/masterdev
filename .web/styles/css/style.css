@@ -1,0 +1,552 @@
+/* estilo base*/
+.base{
+    background: #121212;
+    background: linear-gradient(
+        135deg,
+        #121212 25%,
+        #1a1a1a 25%,
+        #1a1a1a 50%,
+        #121212 50%,
+        #121212 75%,
+        #1a1a1a 75%,
+        #1a1a1a
+    );
+    background-size: 40px 40px;
+    animation: move 4s linear infinite;
+    width: 100%;
+    height: 90vh;
+}
+@keyframes move{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 40px 40px;
+    }
+}
+/*estilo de previews*/
+.small{
+    background-color: #bba259;
+    width: 100%;
+    height: 8vh;
+}
+
+/*estilo del about*/
+@keyframes hero-gradient-animation {
+    0% {
+        --c-0: hsla(266.99999999999983, 1%, 12%, 1);
+        --x-0: 85%;
+        --s-start-0: 9%;
+        --s-end-0: 55%;
+        --y-0: 80%;
+        --c-1: hsla(335.9999999999997, 2%, 22%, 1);
+        --y-1: 24%;
+        --x-1: 60%;
+        --s-start-1: 5%;
+        --s-end-1: 72%;
+        --y-2: 82%;
+        --x-2: 13%;
+        --c-2: hsla(53.999999999999886, 0%, 0%, 0.49);
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --x-3: 24%;
+        --y-3: 7%;
+        --c-3: hsla(299, 4%, 36%, 1);
+    }
+
+    100% {
+        --c-0: hsla(266.99999999999943, 0%, 12%, 1);
+        --x-0: 31%;
+        --s-start-0: 9%;
+        --s-end-0: 55%;
+        --y-0: 94%;
+        --c-1: hsla(0, 4%, 19%, 1);
+        --y-1: 25%;
+        --x-1: 2%;
+        --s-start-1: 5%;
+        --s-end-1: 72%;
+        --y-2: 20%;
+        --x-2: 98%;
+        --c-2: hsla(54.000000000000036, 0%, 0%, 0.49);
+        --s-start-2: 5%;
+        --s-end-2: 52%;
+        --s-start-3: 13%;
+        --s-end-3: 68%;
+        --x-3: 95%;
+        --y-3: 92%;
+        --c-3: hsla(298.99999999999994, 3%, 41%, 1);
+    }
+}
+
+@property --c-0 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(266.99999999999983, 1%, 12%, 1)
+}
+
+@property --x-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 85%
+}
+
+@property --s-start-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 9%
+}
+
+@property --s-end-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 55%
+}
+
+@property --y-0 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 80%
+}
+
+@property --c-1 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(335.9999999999997, 2%, 22%, 1)
+}
+
+@property --y-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --x-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 60%
+}
+
+@property --s-start-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-1 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 72%
+}
+
+@property --y-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 82%
+}
+
+@property --x-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --c-2 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(53.999999999999886, 0%, 0%, 0.49)
+}
+
+@property --s-start-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 5%
+}
+
+@property --s-end-2 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 52%
+}
+
+@property --s-start-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 13%
+}
+
+@property --s-end-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 68%
+}
+
+@property --x-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 24%
+}
+
+@property --y-3 {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 7%
+}
+
+@property --c-3 {
+    syntax: '<color>';
+    inherits: false;
+    initial-value: hsla(299, 4%, 36%, 1)
+}
+
+/*estilo de about*/
+.medium {
+    --c-0: hsla(266.99999999999983, 1%, 12%, 1);
+    --x-0: 85%;
+    --y-0: 80%;
+    --c-1: hsla(335.9999999999997, 2%, 22%, 1);
+    --y-1: 24%;
+    --x-1: 60%;
+    --y-2: 82%;
+    --x-2: 13%;
+    --c-2: hsla(53.999999999999886, 0%, 0%, 0.49);
+    --x-3: 24%;
+    --y-3: 7%;
+    --c-3: hsla(299, 4%, 36%, 1);
+    ;
+    background-color: hsla(0, 0%, 0%, 1);
+    background-image: radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)), radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)), radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)), radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3));
+    animation: hero-gradient-animation 10s linear infinite alternate;
+    background-blend-mode: normal, normal, normal, normal;
+    width: 100%;
+    height: 125vh;
+    font-weight: bold;
+}
+
+/*estilo original de los previews*/
+.small_two{
+    width: 100%;
+    height: 8vh;
+    cursor: pointer;
+    padding: 1px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px
+    6px rgba(110, 80, 20, 0.4),
+    inset 0 -2px 5px 1px rgba(139,66,8,1),
+    inset 0 -1px 1px 3px rgba(250,227,133,1);
+    background-image: linear-gradient(
+        160deg,
+        #a54e07,
+        #b47e11,
+        #fef1a2,
+        #bc881b,
+        #a54e07
+    );
+    border: 1px solid #a55d07;
+    color: rgb(120, 50, 5);
+    text-shadow: 0 2px 2px rgba(250, 227, 133, 1);
+    transition: all 0.1s ease-in-out;
+    background-position: center;
+}
+.small_two:focus,
+.small_two:hover{
+    background-size: 150% 150%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+        inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+    border: 1px solid rgba(165, 93, 7, 0.6);
+    color: rgba(120, 50, 5, 0.8);
+}
+.small_two:active{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(110, 80, 20, 0.4),
+    inset 0 -2px 5px 1px #b17d10, inset 0 -1px 1px 3px rgba(250, 227, 133, 1);
+}
+
+/*estilo de los trabajos*/
+.work{
+    background-color: #111111;
+    background-image: linear-gradient(
+        32deg,
+        rgba(8,8,8,0.74) 30px,
+        transparent
+    );
+    background-size: 60px 60px;
+    background-position: -5px -5px;
+    width: 100%;
+    height: 160vh;
+    flex-direction: row,column,column;
+    justify-content: center;
+}
+
+/*estilo de mision*/
+
+.mision{
+    background: #020202;
+    font-weight: bold;
+    width: 100%;
+    height: 115vh;
+    --s: 37px; 
+    --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
+    --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
+    --g2: conic-gradient(from 180deg at 43.75% calc(425% / 6), var(--c));
+    --g3: conic-gradient(from -60deg at 50% calc(175% / 12), var(--c));
+    background: var(--g1), var(--g1) var(--s) calc(1.73 * var(--s)), var(--g2),
+      var(--g2) var(--s) calc(1.73 * var(--s)), var(--g3) var(--s) 0,
+      var(--g3) 0 calc(1.73 * var(--s)) #1e1e1e;
+    background-size: calc(2 * var(--s)) calc(3.46 * var(--s));
+    border-bottom: 2px solid rgba(231, 231, 231, 0.678);
+    }
+
+/*estilo de contacto*/
+
+.imbox{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        30deg,
+        #111111 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #111111 87.5%,
+        #111111
+    ),
+        linear-gradient(
+        150deg,
+        #111111 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #111111 87.5%,
+        #111111
+    ),
+        linear-gradient(
+        30deg,
+        #111111 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #111111 87.5%,
+        #111111
+    ),
+        linear-gradient(
+        150deg,
+        #111111 12%,
+        transparent 12.5%,
+        transparent 87%,
+        #111111 87.5%,
+        #111111
+    ),
+        linear-gradient(
+        60deg,
+        #77777777 25%,
+        transparent 25.5%,
+        transparent 75%,
+        #77777777 75%,
+        #77777777
+    ),
+        linear-gradient(
+        60deg,
+        #77777777 25%,
+        transparent 25.5%,
+        transparent 75%,
+        #77777777 75%,
+        #77777777
+    );
+    background-position:
+        0 0,
+        0 0,
+        40px 70px,
+        40px 70px,
+        0 0,
+        40px 70px;
+    background-color: #000000;
+    background-size: 80px 140px;
+    box-shadow: inset 0 0 100px rgba(255, 215, 0, 0.1);
+}
+
+
+/*estilo del footer*/
+
+.footer{
+    background: #2c2c2e;
+    font-size: small;
+    width: 100%;
+    height: 20vh;
+    --color: rgba(114,114,114,0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%,
+    var(--color) 25%, var(--color) 26%, 
+    transparent 27%,transparent 74%, 
+    var(--color) 75%, var(--color) 76%, 
+    transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, 
+    var(--color) 25%, var(--color) 26%, 
+    transparent 27%,transparent 74%, 
+    var(--color) 75%, var(--color) 76%, 
+    transparent 77%,transparent);
+
+    background-size: 55px 55px;
+}
+
+/*texto del navbar*/
+
+.text-shine{
+    color: #5b5b5ba4;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0) 40%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(255, 255, 255, 0) 60%
+    );
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    0%{
+        background-position: -200%;
+    }
+    100%{
+        background-position: 200%;
+    }
+}
+.text-shine:hover{
+    text-decoration: none;
+}
+.text-shine::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #bba259;
+    display: block;
+    transition: 0.5s;
+}
+
+.text-shine:hover::after{
+    width: 100%;
+}
+
+.image-style{
+    border: 2px solid #020202;
+    box-shadow: 3px 3px 0px 0px #ffffff;
+    transition: 0.2s;
+}
+.image-style:hover{
+    box-shadow: 8px 8px 0px 0px #ffffff;
+    transform: translate(-3px, -3px);
+    border: 2px solid #bba259 ;
+}
+
+/*animacion de entrada 1*/
+.animation-one {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/*carta para los proyectos*/
+.card{
+    --background: linear-gradient(to left, #fffb00 0%, #e97100 100%);
+    width: 550px;
+    height: 550px;
+    border-radius: 2rem;
+    padding: 2px;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+}
+.card::after{
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: var(--background);
+    transition: all 0.8s ;
+}
+.card:hover::after{
+    opacity: 0;
+}
+.card:hover{
+    transition: color 1s;
+}
+
+.carta{
+    width: 207px;
+    height: 250px;
+    border-radius: 20px;
+    background-color: transparent;
+    background-image: radial-gradient(
+        at 88% 40%,
+        hsla(240, 15%, 9%, 1) 0px,
+        transparent 85%
+    ),
+        radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+        radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
+        radial-gradient(at 0% 64%, hsl(189, 99%, 26%) 0px, transparent 85%),
+        radial-gradient(at 41% 94%, hsl(189, 97%, 36%) 0px, transparent 85%),
+        radial-gradient(at 100% 99%, hsl(188, 94%, 13%) 0px, transparent 85%);
+    border-radius: 1rem;
+    box-shadow: 0px -16px 24px 0px rgba(255, 255, 255, 0.25) inset;
+    position: relative;
+    padding: 0.30rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s all ease-out;
+    overflow: visible;
+    
+}
+
+/*dentro de las cartas del proyecto*/
+.carta-boton{
+    font-family: 'Poppins' sans-serif;
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.carta-boton:hover{
+    background-color: rgb(0, 80, 201);
+}
+
+.carta:hover{
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(25, 220, 255, 0.781);
+}
+
+.carta:hover .carta-boton{
+    transform: translate(-50%, 50%);
+    opacity: 1;
+}
+
+.wave-text{
+    animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave{
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20%);
+    }
+}
