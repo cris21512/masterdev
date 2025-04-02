@@ -2,7 +2,7 @@
 
 
 import { Fragment } from "react"
-import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Strong as RadixThemesStrong, Text as RadixThemesText } from "@radix-ui/themes"
+import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
 import NextLink from "next/link"
 import NextHead from "next/head"
 
@@ -71,21 +71,46 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack animate__animated animate__fadeIn"} css={({ ["maxWidth"] : "600px", ["alignItems"] : "center", ["padding"] : "2em", ["marginTop"] : "2em", ["marginBottom"] : "2em" })} direction={"column"} gap={"3"}>
 
-<RadixThemesBox className={"animation-one"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack animation-one"} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#FFDF00" })} size={"8"}>
+<RadixThemesHeading className={"title-header"}>
 
-{"\u00a1Hola! Soy Cristopher Fuentes, mas conocido como: Master"}
+{"\u00a1Hola! Soy Cristopher Fuentes... mas conocido como: Master"}
 </RadixThemesHeading>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
+
+<RadixThemesBox className={"loader"}>
+
 <RadixThemesText as={"p"}>
 
-{"Soy: "}
-<RadixThemesStrong>
+{"Y soy:"}
+</RadixThemesText>
+<RadixThemesBox className={"words"}>
 
-{"Desarrollador Web - Front-end"}
-</RadixThemesStrong>
+<RadixThemesText as={"p"} className={"text-loading"}>
+
+{""}
+</RadixThemesText>
+<RadixThemesText as={"p"} className={"text-loading"}>
+
+{"Desarrollador Web"}
+</RadixThemesText>
+<RadixThemesText as={"p"} className={"text-loading"}>
+
+{"Front-end"}
+</RadixThemesText>
+<RadixThemesText as={"p"} className={"text-loading"}>
+
+{"Autodidacta"}
+</RadixThemesText>
+<RadixThemesText as={"p"} className={"text-loading"}>
+
+{"Creador de contenido"}
 </RadixThemesText>
 </RadixThemesBox>
+</RadixThemesBox>
+</RadixThemesFlex>
+</RadixThemesFlex>
 <RadixThemesAvatar className={"image-style"} radius={"medium"} size={"9"} src={"/avatar.jpg"}/>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -138,7 +163,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"column"} gap={"4"}>
 
-<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#FFDF00" })}>
+<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
 
 {"Web Oficial de: Chito y Cris"}
 </RadixThemesHeading>
@@ -169,7 +194,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"column"} gap={"4"}>
 
-<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#FFDF00" })}>
+<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
 
 {"Mi portafolio"}
 </RadixThemesHeading>
@@ -233,7 +258,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#FFDF00" })} size={"8"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
 
 {"Contactame"}
 </RadixThemesHeading>
@@ -279,7 +304,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#FFDF00" })} size={"8"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
 
 {"Mis redes sociales"}
 </RadixThemesHeading>

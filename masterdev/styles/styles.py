@@ -43,7 +43,7 @@ title_style = {
     "font_family": "'Raleway', sans-serif",
     "font_weight": "600",
     "font_style": "italic",
-    "color": Colors.SECONDARY.value,
+    "color": Colors.BLUE.value,
 }
 text_style = {
     "font-family": "Poppins",

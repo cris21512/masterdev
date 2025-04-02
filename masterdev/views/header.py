@@ -1,5 +1,6 @@
 import reflex as rx
 from masterdev.components.heading import heading
+from masterdev.components.text_header import text_header
 from masterdev.styles.styles import Spacing
 from masterdev.styles.colors import Colors as Color
 import masterdev.styles.styles as styles
@@ -9,15 +10,13 @@ from masterdev.styles.styles import Size
 
 def header() -> rx.Component:
     return rx.vstack(
-        rx.box(
-            heading(
-                "¡Hola! Soy Cristopher Fuentes, mas conocido como: Master"
+        rx.vstack(
+            rx.heading(
+                "¡Hola! Soy Cristopher Fuentes... mas conocido como: Master",
+                class_name="title-header"
             ),
-            rx.text(
-                "Soy: ", rx.text.strong("Desarrollador Web - Front-end")
-            ),
+            text_header(),
             class_name="animation-one",
-            style=styles.text_style
         ),
         rx.avatar(
             src="/avatar.jpg",
