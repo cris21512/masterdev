@@ -8,7 +8,7 @@ from masterdev.components.text_navbar import text_barra
 
 
 def navbar() -> rx.Component:
-    return rx.hstack(
+    return rx.flex(
         rx.link(
             rx.image(
                 src="/logoM.png",
@@ -22,8 +22,8 @@ def navbar() -> rx.Component:
         rx.flex(
             rx.hstack(
                 text_barra(
-                    "Portafolio",
-                    const.PROJECT_2
+                    "Mi CV",
+                    const.CV
                 ),
                 text_barra(
                     "contacto",

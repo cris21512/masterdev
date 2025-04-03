@@ -1,20 +1,27 @@
 import reflex as rx
 import masterdev.styles.styles as styles
+from masterdev.styles.styles import Spacing
 
-def link_mision(info:str, text:str,) -> rx.Component:
+
+def link_mision(image:str, info:str, url:str) -> rx.Component:
     return rx.flex(
-        rx.vstack(
-            rx.text(
+            rx.link(
+                rx.image(
+                    src=image,
+                    width="auto",
+                    height="300px"
+                ),
+                href=url,
+                is_external=True
+            ),
+            rx.heading(
                 info,
-                style=styles.text_style
+                as_="h2",
+                style=styles.title_style
             ),
-            rx.text(
-                text,
-                style=styles.text_style
-            ),
-            spacing="6",
-            align="center"
-        ),
-        direction="column"
+        flex_direction=["column", "column"],
+        spacing=Spacing.BIG.value,
+        width="100%",
+        align="center"
     )
 

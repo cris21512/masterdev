@@ -19,7 +19,7 @@ export default function Component() {
 
 <RadixThemesBox>
 
-<RadixThemesFlex align={"start"} className={"rx-Stack animate__animated animate__backInDown"} css={({ ["justifyContent"] : "center", ["alignItems"] : "center", ["position"] : "sticky", ["background"] : "#020202", ["borderBottom"] : "1px solid rgba(247, 247, 247, 0.2)", ["paddingInlineStart"] : "0.5em", ["paddingInlineEnd"] : "0.5em", ["paddingTop"] : "0.5em", ["paddingBottom"] : "0.5em", ["zIndex"] : "999", ["top"] : "0" })} direction={"row"} gap={"3"}>
+<RadixThemesFlex className={"animate__animated animate__backInDown"} css={({ ["justifyContent"] : "center", ["alignItems"] : "center", ["position"] : "sticky", ["background"] : "#020202", ["borderBottom"] : "1px solid rgba(247, 247, 247, 0.2)", ["paddingInlineStart"] : "0.5em", ["paddingInlineEnd"] : "0.5em", ["paddingTop"] : "0.5em", ["paddingBottom"] : "0.5em", ["zIndex"] : "999", ["top"] : "0" })}>
 
 <RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })}>
 
@@ -34,11 +34,11 @@ export default function Component() {
 
 <RadixThemesLink asChild={true} className={"text-shine"} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"https://master-portfolio-sable.vercel.app/"} passHref={true}>
+<NextLink href={"/CV_CristopherFuentes.pdf"} passHref={true}>
 
 <RadixThemesText align={"center"} as={"p"} css={({ ["&:hover"] : ({ ["color"] : "#CFC5B0" }), ["color"] : "#8D999" })}>
 
-{"Portafolio"}
+{"Mi CV"}
 </RadixThemesText>
 </NextLink>
 </RadixThemesLink>
@@ -237,19 +237,33 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["maxWidth"] : "900px", ["width"] : "100%", ["padding"] : "0.5em", ["marginTop"] : "1em", ["marginBottom"] : "0.5em" })} direction={"column"} gap={"3"}>
 
-<RadixThemesFlex direction={"column"}>
+<RadixThemesFlex align={"center"} css={({ ["@media screen and (min-width: 0)"] : ({ ["flexDirection"] : "column" }), ["@media screen and (min-width: 30em)"] : ({ ["flexDirection"] : "column" }), ["width"] : "100%" })} gap={"6"}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"6"}>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
+<NextLink href={"/Master_JS_Certf.pdf"} passHref={true}>
 
-{"Mi misi\u00f3n a corto plazo es llegar a trabajar como desarrollador web Front-end. \n            Independientemente de la empresa en la que trabaje, mi objetivo es ampliar mis \n            conocimientos en el desarrollo web. A mediano plazo, mi meta es convertirme en un \n            desarrollador Full-stack, dominando tanto el Front-end como el Back-end. A largo plazo, \n            quiero aprender a desarrollar aplicaciones para entornos iOS y tambi\u00e9n especializarme \n            como Full-stack en el desarrollo de apps."}
-</RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
+<img css={({ ["width"] : "auto", ["height"] : "300px" })} src={"/certif_1.png"}/>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
 
-{" En el \u00e1mbito del desarrollo de aplicaciones, tengo la ilusi\u00f3n de empezar aprendiendo Swift. \n            Despu\u00e9s de eso, considero que una excelente opci\u00f3n ser\u00eda aprender Kotlin, ideal para desarrollar \n            aplicaciones multiplataforma. Actualmente, manejo lo siguiente: HTML, CSS, JavaScript y Python. \n            Cabe mencionar que Python fue el primer lenguaje con el que empec\u00e9 en este fascinante mundo \n            de la programaci\u00f3n."}
-</RadixThemesText>
+{"Curso de Python desde cero de: Brais moure(Mouredev)"}
+</RadixThemesHeading>
 </RadixThemesFlex>
+<RadixThemesFlex align={"center"} css={({ ["@media screen and (min-width: 0)"] : ({ ["flexDirection"] : "column" }), ["@media screen and (min-width: 30em)"] : ({ ["flexDirection"] : "column" }), ["width"] : "100%" })} gap={"6"}>
+
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"/Master_Py_Certf.pdf"} passHref={true}>
+
+<img css={({ ["width"] : "auto", ["height"] : "300px" })} src={"/certif_2.png"}/>
+</NextLink>
+</RadixThemesLink>
+<RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
+
+{"Curso de JavaScript desde cero de: Brais moure(Mouredev)"}
+</RadixThemesHeading>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -348,7 +362,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"/CristopherFuentes_CV.pdf"} passHref={true}>
+<NextLink href={"/CV_CristopherFuentes.pdf"} passHref={true}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
