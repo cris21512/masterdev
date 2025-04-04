@@ -1,12 +1,77 @@
 /** @jsxImportSource @emotion/react */
 
 
-import { Fragment } from "react"
-import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText } from "@radix-ui/themes"
+import { Fragment, useContext, useId, useState } from "react"
+import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
 import NextLink from "next/link"
+import { Event, isTrue, refs } from "$/utils/state"
+import { EventLoopContext } from "$/utils/context"
 import NextHead from "next/head"
 
 
+
+export function Fragment_a3ae206cd816d5af91bb4ded962c16b0 () {
+  
+  const id_fishdrju = useId()
+  const [Copying, setCopying] = useState(false)
+  refs['_client_state_setCopying'] = ((uradwyuq) => (Array.prototype.forEach.call([...(Object.values(refs['_client_state_dict_setCopying'])), ...[(value) => { refs['_client_state_Copying'] = value; }]], ((setter) => (setter(uradwyuq))))))
+  refs['_client_state_Copying'] ??= Copying
+  refs['_client_state_dict_Copying'] ??= {}
+  refs['_client_state_dict_setCopying'] ??= {}
+  refs['_client_state_dict_Copying'][id_fishdrju] = Copying
+  refs['_client_state_dict_setCopying'][id_fishdrju] = setCopying
+  const [addEvents, connectErrors] = useContext(EventLoopContext);
+
+
+
+
+
+  
+  return (
+    <Fragment>
+
+{refs['_client_state_dict_Copying'][id_fishdrju] ? (
+  <Fragment>
+
+<RadixThemesTooltip content={"Copied"} open={refs['_client_state_dict_Copying'][id_fishdrju]} side={"top"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
+
+<img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/email.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+
+{"Listo!"}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+
+{"cristopherfm21.5@gmail.com"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesTooltip>
+</Fragment>
+) : (
+  <Fragment>
+
+<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_script", ({ ["javascript_code"] : "\n        refs['_client_state_setCopying'](true);\n        setTimeout(() => {\n            refs['_client_state_setCopying'](false);\n        }, 1750);\n        " }), ({  }))), (Event("reflex___state____state.masterdev___backend___copy_clipboard____my_copy_email.copy_email", ({  }), ({  })))], args, ({  }))))}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
+
+<img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/email.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+
+{"Respuesta rapida-Toca para copiar"}
+</RadixThemesText>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+
+{"cristopherfm21.5@gmail.com"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesBox>
+</Fragment>
+)}
+</Fragment>
+  )
+}
 
 export default function Component() {
     
@@ -280,7 +345,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"9"}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
 
 <img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/email.svg"}/>
 <RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
@@ -292,7 +357,7 @@ export default function Component() {
 {"master.email94@gmail.com"}
 </RadixThemesText>
 </RadixThemesFlex>
-<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
 
 <img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/direct.svg"}/>
 <RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
@@ -310,21 +375,21 @@ export default function Component() {
 </RadixThemesFlex>
 <RadixThemesFlex className={"footer"} css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
-<RadixThemesFlex css={({ ["maxWidth"] : "1100px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })} justify={"center"} gap={"9"}>
+<RadixThemesFlex css={({ ["maxWidth"] : "900px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })} justify={"center"} gap={"9"}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"9"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"row"} gap={"7"}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
 
-{"Mis redes sociales"}
+{"Interesado en contactarme?"}
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
 
-{"Muchas gracias por ver!"}
+{"Contactame por aca ->"}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -352,16 +417,6 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"https://www.youtube.com/@RNFUNTS"} passHref={true}>
-
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
-
-<img css={({ ["width"] : "40px", ["height"] : "40px" })} src={"icons/Youwhite.svg"}/>
-</RadixThemesFlex>
-</NextLink>
-</RadixThemesLink>
-<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
-
 <NextLink href={"/CV_CristopherFuentes.pdf"} passHref={true}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
@@ -371,6 +426,7 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
+<Fragment_a3ae206cd816d5af91bb4ded962c16b0/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>

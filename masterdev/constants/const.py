@@ -14,6 +14,7 @@ GITPROJECT = "https://github.com/cris21512/Chito-Y-Cris"
 #contacto
 
 MAIL="mailto:master.email94@gmail.com"
+EMAIL_COPY="cristopherfm21.5@gmail.com"
 
 #PDF
 

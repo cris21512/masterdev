@@ -13,10 +13,6 @@ def icons() -> rx.Component:
             const.LINKEDIN
         ),
         link_icons(
-            "icons/Youwhite.svg",
-            const.YOUTUBE
-        ),
-        link_icons(
             "icons/doc.svg",
             const.CV
         )

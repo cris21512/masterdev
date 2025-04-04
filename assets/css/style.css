@@ -283,7 +283,7 @@
     background: #020202;
     font-weight: bold;
     width: 100%;
-    height: 115vh;
+    height: 135vh;
     --s: 37px; 
     --c: #0000, #282828 0.5deg 119.5deg, #0000 120deg;
     --g1: conic-gradient(from 60deg at 56.25% calc(425% / 6), var(--c));
@@ -299,66 +299,35 @@
 /*estilo de contacto*/
 
 .imbox{
+    background: #2c2c2e;
+    font-size: small;
     width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        30deg,
-        #111111 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #111111 87.5%,
-        #111111
-    ),
-        linear-gradient(
-        150deg,
-        #111111 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #111111 87.5%,
-        #111111
-    ),
-        linear-gradient(
-        30deg,
-        #111111 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #111111 87.5%,
-        #111111
-    ),
-        linear-gradient(
-        150deg,
-        #111111 12%,
-        transparent 12.5%,
-        transparent 87%,
-        #111111 87.5%,
-        #111111
-    ),
-        linear-gradient(
-        60deg,
-        #77777777 25%,
-        transparent 25.5%,
-        transparent 75%,
-        #77777777 75%,
-        #77777777
-    ),
-        linear-gradient(
-        60deg,
-        #77777777 25%,
-        transparent 25.5%,
-        transparent 75%,
-        #77777777 75%,
-        #77777777
-    );
-    background-position:
-        0 0,
-        0 0,
-        40px 70px,
-        40px 70px,
-        0 0,
-        40px 70px;
-    background-color: #000000;
-    background-size: 80px 140px;
-    box-shadow: inset 0 0 100px rgba(255, 215, 0, 0.1);
+    height: 100vh;
+    --color: rgba(114,114,114,0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%,
+    var(--color) 25%, var(--color) 26%, 
+    transparent 27%,transparent 74%, 
+    var(--color) 75%, var(--color) 76%, 
+    transparent 77%,transparent),
+    linear-gradient(90deg, transparent 24%, 
+    var(--color) 25%, var(--color) 26%, 
+    transparent 27%,transparent 74%, 
+    var(--color) 75%, var(--color) 76%, 
+    transparent 77%,transparent);
+
+    background-size: 55px 55px;
+    border-bottom: 5px solid rgba(255, 238, 0, 0.486);
+    animation: moveBackgroundd 40s linear infinite;
+}
+
+@keyframes moveBackgroundd {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100px 100px;
+    }
 }
 
 
@@ -383,6 +352,16 @@
     transparent 77%,transparent);
 
     background-size: 55px 55px;
+    animation: moveBackgroundd 40s linear infinite;
+}
+
+@keyframes moveBackgroundd {
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100px 100px;
+    }
 }
 
 /*texto del navbar*/

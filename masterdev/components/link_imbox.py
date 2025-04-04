@@ -2,7 +2,7 @@ import reflex as rx
 import masterdev.styles.styles as style
 from masterdev.components.heading import heading
 
-def link_inbox(image:str, info:str, copy:str) -> rx.Component:
+def link_inbox(image:str, info:str, copy:str, ) -> rx.Component:
     return rx.vstack(
         rx.image(
             src=image,
@@ -15,7 +15,10 @@ def link_inbox(image:str, info:str, copy:str) -> rx.Component:
         ),
         rx.text(
             copy,
-            style=style.inbox_text_style
+            style=style.inbox_text_style,
         ),
-        align="center"
+        style={
+            "cursor": "default"
+        },
+        align="center",
     )

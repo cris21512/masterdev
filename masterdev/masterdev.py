@@ -3,8 +3,8 @@ from masterdev.components.heading import heading
 from masterdev.views.navbar import navbar
 from masterdev.views.header import header
 from masterdev.views.work import work
-from masterdev.views.mision import mision
-from masterdev.views.inbox import inbox
+from masterdev.views.certificados import certificados
+from masterdev.views.technologies import inbox
 from masterdev.views.about import about
 from masterdev.views.footer import footer
 from masterdev.styles.styles import STYLESHEETS,BASE_STYLE
@@ -58,7 +58,7 @@ def index() -> rx.Component:
         ),
         rx.center(
             rx.vstack(
-                mision()
+                certificados()
             ),
             class_name="mision",
             width="100%"

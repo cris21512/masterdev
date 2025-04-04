@@ -8,7 +8,7 @@ def inbox() -> rx.Component:
             link_inbox(
                 "icons/email.svg",
                 "Mi correo publico!",
-                "master.email94@gmail.com"
+                "master.email94@gmail.com",
             ),
             link_inbox(
                 "icons/direct.svg",

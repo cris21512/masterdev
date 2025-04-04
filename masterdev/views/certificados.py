@@ -3,7 +3,7 @@ from masterdev.components.link_mision import link_mision
 from masterdev.styles.styles import Size
 import masterdev.constants.const as const
 
-def mision() -> rx.Component:
+def certificados() -> rx.Component:
     return rx.vstack(
         link_mision(
             "/certif_1.png",
