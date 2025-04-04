@@ -17,5 +17,5 @@ def copy_script():
 class MyCopyEmail(rx.State):
     value: str=""
 
-    async def copy_email(self):
+    def copy_email(self):
         self.value = "cristopherfm21.5@gmail.com"

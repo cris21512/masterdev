@@ -10,16 +10,16 @@ import NextHead from "next/head"
 
 
 
-export function Fragment_a3ae206cd816d5af91bb4ded962c16b0 () {
+export function Fragment_908c3ef540041adb5b7ee6f06e047982 () {
   
-  const id_fishdrju = useId()
+  const id_mhbcpxuf = useId()
   const [Copying, setCopying] = useState(false)
-  refs['_client_state_setCopying'] = ((uradwyuq) => (Array.prototype.forEach.call([...(Object.values(refs['_client_state_dict_setCopying'])), ...[(value) => { refs['_client_state_Copying'] = value; }]], ((setter) => (setter(uradwyuq))))))
+  refs['_client_state_setCopying'] = ((ihearpck) => (Array.prototype.forEach.call([...(Object.values(refs['_client_state_dict_setCopying'])), ...[(value) => { refs['_client_state_Copying'] = value; }]], ((setter) => (setter(ihearpck))))))
   refs['_client_state_Copying'] ??= Copying
   refs['_client_state_dict_Copying'] ??= {}
   refs['_client_state_dict_setCopying'] ??= {}
-  refs['_client_state_dict_Copying'][id_fishdrju] = Copying
-  refs['_client_state_dict_setCopying'][id_fishdrju] = setCopying
+  refs['_client_state_dict_Copying'][id_mhbcpxuf] = Copying
+  refs['_client_state_dict_setCopying'][id_mhbcpxuf] = setCopying
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
@@ -30,10 +30,10 @@ export function Fragment_a3ae206cd816d5af91bb4ded962c16b0 () {
   return (
     <Fragment>
 
-{refs['_client_state_dict_Copying'][id_fishdrju] ? (
+{refs['_client_state_dict_Copying'][id_mhbcpxuf] ? (
   <Fragment>
 
-<RadixThemesTooltip content={"Copied"} open={refs['_client_state_dict_Copying'][id_fishdrju]} side={"top"}>
+<RadixThemesTooltip content={"Copied"} open={refs['_client_state_dict_Copying'][id_mhbcpxuf]} side={"top"}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
 
@@ -426,7 +426,7 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
-<Fragment_a3ae206cd816d5af91bb4ded962c16b0/>
+<Fragment_908c3ef540041adb5b7ee6f06e047982/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
