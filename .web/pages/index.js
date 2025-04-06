@@ -1,25 +1,19 @@
 /** @jsxImportSource @emotion/react */
 
 
-import { Fragment, useContext, useId, useState } from "react"
+import { Fragment, useContext } from "react"
 import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
 import NextLink from "next/link"
-import { Event, isTrue, refs } from "$/utils/state"
-import { EventLoopContext } from "$/utils/context"
+import { jsx } from "@emotion/react"
+import { Event, isTrue } from "$/utils/state"
+import { EventLoopContext, StateContexts } from "$/utils/context"
 import NextHead from "next/head"
 
 
 
-export function Fragment_ba37d2a75227890b0c53bde766ab1316 () {
+export function Fragment_21414aa0217bd6ce5995395bafe9ac96 () {
   
-  const id_evstrgng = useId()
-  const [Copying, setCopying] = useState(false)
-  refs['_client_state_setCopying'] = ((dxzvfmfj) => (Array.prototype.forEach.call([...(Object.values(refs['_client_state_dict_setCopying'])), ...[(value) => { refs['_client_state_Copying'] = value; }]], ((setter) => (setter(dxzvfmfj))))))
-  refs['_client_state_Copying'] ??= Copying
-  refs['_client_state_dict_Copying'] ??= {}
-  refs['_client_state_dict_setCopying'] ??= {}
-  refs['_client_state_dict_Copying'][id_evstrgng] = Copying
-  refs['_client_state_dict_setCopying'][id_evstrgng] = setCopying
+  const reflex___state____state__masterdev___backend___backend____state = useContext(StateContexts.reflex___state____state__masterdev___backend___backend____state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
@@ -30,29 +24,10 @@ export function Fragment_ba37d2a75227890b0c53bde766ab1316 () {
   return (
     <Fragment>
 
-{refs['_client_state_dict_Copying'][id_evstrgng] ? (
+{isTrue((jsx(RadixThemesTooltip, ({ ["content"] : "Copied", ["side"] : "top" }), (jsx(RadixThemesFlex, ({ ["align"] : "center", ["className"] : "rx-Stack", ["css"] : ({ ["cursor"] : "default" }), ["direction"] : "column", ["gap"] : "3" }), (jsx("img", ({ ["css"] : ({ ["width"] : "auto", ["height"] : "30px" }), ["src"] : "icons/email.svg" }))), (jsx(RadixThemesText, ({ ["as"] : "p", ["css"] : ({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" }) }), (jsx(Fragment, ({  }), "Listo!")))), (jsx(RadixThemesText, ({ ["as"] : "p", ["css"] : ({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" }) }), (jsx(Fragment, ({  }), "cristopherfm21.5@gmail.com"))))))))) ? (
   <Fragment>
 
-<RadixThemesTooltip content={"Copied"} open={refs['_client_state_dict_Copying'][id_evstrgng]} side={"top"}>
-
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
-
-<img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/email.svg"}/>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
-
-{"Listo!"}
-</RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
-
-{"cristopherfm21.5@gmail.com"}
-</RadixThemesText>
-</RadixThemesFlex>
-</RadixThemesTooltip>
-</Fragment>
-) : (
-  <Fragment>
-
-<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_script", ({ ["javascript_code"] : "\n        refs['_client_state_setCopying'](true);\n        setTimeout(() => {\n            refs['_client_state_setCopying'](false);\n        }, 1750);\n        " }), ({  }))), (Event("reflex___state____state.masterdev___backend___copy_clipboard____my_copy_email.copy_email", ({  }), ({  })))], args, ({  }))))}>
+<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"](reflex___state____state__masterdev___backend___backend____state.email_content_data))), ["callback"] : null }), ({  })))], args, ({  }))))}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
 
@@ -68,6 +43,8 @@ export function Fragment_ba37d2a75227890b0c53bde766ab1316 () {
 </RadixThemesFlex>
 </RadixThemesBox>
 </Fragment>
+) : (
+  <Fragment/>
 )}
 </Fragment>
   )
@@ -426,7 +403,7 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
-<Fragment_ba37d2a75227890b0c53bde766ab1316/>
+<Fragment_21414aa0217bd6ce5995395bafe9ac96/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
