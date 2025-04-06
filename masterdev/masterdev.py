@@ -10,8 +10,8 @@ from masterdev.views.footer import footer
 from masterdev.styles.styles import STYLESHEETS,BASE_STYLE
 import masterdev.styles.styles as style
 
-
-
+class State(rx.State):
+    """"""
 
 def index() -> rx.Component:
     return rx.box(

@@ -1,6 +1,5 @@
 import reflex as rx
 from ..backend.backend import State
-from ..backend.copy_clipboard import CopyLocalState,copy_script,MyCopyEmail
 from masterdev.components.link_imbox import link_inbox
 import masterdev.constants.const as const
 

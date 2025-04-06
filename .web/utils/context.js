@@ -1,7 +1,7 @@
 import { createContext, useContext, useMemo, useReducer, useState } from "react"
 import { applyDelta, Event, hydrateClientStorage, useEventLoop, refs } from "$/utils/state.js"
 
-export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.masterdev___backend___copy_clipboard____my_copy_email": {"value": ""}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.masterdev___backend___backend____state": {"email_content_data": "cristopherfm21.5@gmail.com"}}
+export const initialState = {"reflex___state____state": {"is_hydrated": false, "router": {"session": {"client_token": "", "client_ip": "", "session_id": ""}, "headers": {"host": "", "origin": "", "upgrade": "", "connection": "", "cookie": "", "pragma": "", "cache_control": "", "user_agent": "", "sec_websocket_version": "", "sec_websocket_key": "", "sec_websocket_extensions": "", "accept_encoding": "", "accept_language": "", "raw_headers": {}}, "page": {"host": "", "path": "", "raw_path": "", "full_path": "", "full_raw_path": "", "params": {}}}}, "reflex___state____state.reflex___state____update_vars_internal_state": {}, "reflex___state____state.reflex___state____frontend_event_exception_state": {}, "reflex___state____state.masterdev___masterdev____state": {}, "reflex___state____state.reflex___state____on_load_internal_state": {}, "reflex___state____state.masterdev___backend___backend____state": {"email_content_data": "cristopherfm21.5@gmail.com"}}
 
 export const defaultColorMode = "system"
 export const ColorModeContext = createContext(null);
@@ -9,10 +9,10 @@ export const UploadFilesContext = createContext(null);
 export const DispatchContext = createContext(null);
 export const StateContexts = {
   reflex___state____state: createContext(null),
-  reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email: createContext(null),
-  reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
   reflex___state____state__reflex___state____update_vars_internal_state: createContext(null),
   reflex___state____state__reflex___state____frontend_event_exception_state: createContext(null),
+  reflex___state____state__masterdev___masterdev____state: createContext(null),
+  reflex___state____state__reflex___state____on_load_internal_state: createContext(null),
   reflex___state____state__masterdev___backend___backend____state: createContext(null),
 }
 export const EventLoopContext = createContext(null);
@@ -53,7 +53,7 @@ export const initialEvents = () => [
 
 export const isDevMode = false
 
-export const lastCompiledTimeStamp = "2025-04-05 18:37:03.696968"
+export const lastCompiledTimeStamp = "2025-04-05 18:45:23.200446"
 
 export function UploadFilesProvider({ children }) {
   const [filesById, setFilesById] = useState({})
@@ -85,37 +85,37 @@ export function EventLoopProvider({ children }) {
 
 export function StateProvider({ children }) {
   const [reflex___state____state, dispatch_reflex___state____state] = useReducer(applyDelta, initialState["reflex___state____state"])
-  const [reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email, dispatch_reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email] = useReducer(applyDelta, initialState["reflex___state____state.masterdev___backend___copy_clipboard____my_copy_email"])
-  const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
   const [reflex___state____state__reflex___state____update_vars_internal_state, dispatch_reflex___state____state__reflex___state____update_vars_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____update_vars_internal_state"])
   const [reflex___state____state__reflex___state____frontend_event_exception_state, dispatch_reflex___state____state__reflex___state____frontend_event_exception_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____frontend_event_exception_state"])
+  const [reflex___state____state__masterdev___masterdev____state, dispatch_reflex___state____state__masterdev___masterdev____state] = useReducer(applyDelta, initialState["reflex___state____state.masterdev___masterdev____state"])
+  const [reflex___state____state__reflex___state____on_load_internal_state, dispatch_reflex___state____state__reflex___state____on_load_internal_state] = useReducer(applyDelta, initialState["reflex___state____state.reflex___state____on_load_internal_state"])
   const [reflex___state____state__masterdev___backend___backend____state, dispatch_reflex___state____state__masterdev___backend___backend____state] = useReducer(applyDelta, initialState["reflex___state____state.masterdev___backend___backend____state"])
   const dispatchers = useMemo(() => {
     return {
       "reflex___state____state": dispatch_reflex___state____state,
-      "reflex___state____state.masterdev___backend___copy_clipboard____my_copy_email": dispatch_reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email,
-      "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
       "reflex___state____state.reflex___state____update_vars_internal_state": dispatch_reflex___state____state__reflex___state____update_vars_internal_state,
       "reflex___state____state.reflex___state____frontend_event_exception_state": dispatch_reflex___state____state__reflex___state____frontend_event_exception_state,
+      "reflex___state____state.masterdev___masterdev____state": dispatch_reflex___state____state__masterdev___masterdev____state,
+      "reflex___state____state.reflex___state____on_load_internal_state": dispatch_reflex___state____state__reflex___state____on_load_internal_state,
       "reflex___state____state.masterdev___backend___backend____state": dispatch_reflex___state____state__masterdev___backend___backend____state,
     }
   }, [])
 
   return (
     <StateContexts.reflex___state____state value={ reflex___state____state }>
-    <StateContexts.reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email value={ reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email }>
-    <StateContexts.reflex___state____state__reflex___state____on_load_internal_state value={ reflex___state____state__reflex___state____on_load_internal_state }>
     <StateContexts.reflex___state____state__reflex___state____update_vars_internal_state value={ reflex___state____state__reflex___state____update_vars_internal_state }>
     <StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state value={ reflex___state____state__reflex___state____frontend_event_exception_state }>
+    <StateContexts.reflex___state____state__masterdev___masterdev____state value={ reflex___state____state__masterdev___masterdev____state }>
+    <StateContexts.reflex___state____state__reflex___state____on_load_internal_state value={ reflex___state____state__reflex___state____on_load_internal_state }>
     <StateContexts.reflex___state____state__masterdev___backend___backend____state value={ reflex___state____state__masterdev___backend___backend____state }>
       <DispatchContext value={dispatchers}>
         {children}
       </DispatchContext>
     </StateContexts.reflex___state____state__masterdev___backend___backend____state>
+    </StateContexts.reflex___state____state__reflex___state____on_load_internal_state>
+    </StateContexts.reflex___state____state__masterdev___masterdev____state>
     </StateContexts.reflex___state____state__reflex___state____frontend_event_exception_state>
     </StateContexts.reflex___state____state__reflex___state____update_vars_internal_state>
-    </StateContexts.reflex___state____state__reflex___state____on_load_internal_state>
-    </StateContexts.reflex___state____state__masterdev___backend___copy_clipboard____my_copy_email>
     </StateContexts.reflex___state____state>
   )
 }
