@@ -11,7 +11,7 @@ import NextHead from "next/head"
 
 
 
-export function Fragment_b6e0c41d38b2777f8f241c1bbc290401 () {
+export function Fragment_05975b3671aa39d33fc8d066fde5be7d () {
   
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
@@ -26,7 +26,7 @@ export function Fragment_b6e0c41d38b2777f8f241c1bbc290401 () {
 {isTrue((jsx(RadixThemesTooltip, ({ ["content"] : "Copied", ["side"] : "top" }), (jsx(RadixThemesFlex, ({ ["align"] : "center", ["className"] : "rx-Stack", ["css"] : ({ ["cursor"] : "default" }), ["direction"] : "column", ["gap"] : "3" }), (jsx("img", ({ ["css"] : ({ ["width"] : "auto", ["height"] : "30px" }), ["src"] : "icons/email.svg" }))), (jsx(RadixThemesText, ({ ["as"] : "p", ["css"] : ({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" }) }), (jsx(Fragment, ({  }), "Listo!")))), (jsx(RadixThemesText, ({ ["as"] : "p", ["css"] : ({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" }) }), (jsx(Fragment, ({  }), "cristopherfm21.5@gmail.com"))))))))) ? (
   <Fragment>
 
-<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"]("copiado pelutodo"))), ["callback"] : null }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']["info"]("Correo copiado!"))), ["callback"] : null }), ({  })))], args, ({  }))))}>
+<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"]("cristopherfm21.5@gmail.com"))), ["callback"] : null }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']["info"]("Correo copiado!"))), ["callback"] : null }), ({  })))], args, ({  }))))}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
 
@@ -402,7 +402,7 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
-<Fragment_b6e0c41d38b2777f8f241c1bbc290401/>
+<Fragment_05975b3671aa39d33fc8d066fde5be7d/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>

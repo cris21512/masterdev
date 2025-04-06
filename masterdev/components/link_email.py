@@ -22,7 +22,7 @@ def _copy_botom():
                 "cristopherfm21.5@gmail.com",
             ),
             on_click=[
-                rx.set_clipboard("copiado pelutodo"),
+                rx.set_clipboard("cristopherfm21.5@gmail.com"),
                 rx.toast.info("Correo copiado!")
             ]
         )
