@@ -5,15 +5,14 @@ import { Fragment, useContext } from "react"
 import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { jsx } from "@emotion/react"
-import { Event, isTrue } from "$/utils/state"
-import { EventLoopContext, StateContexts } from "$/utils/context"
+import { Event, isTrue, refs } from "$/utils/state"
+import { EventLoopContext } from "$/utils/context"
 import NextHead from "next/head"
 
 
 
-export function Fragment_21414aa0217bd6ce5995395bafe9ac96 () {
+export function Fragment_b6e0c41d38b2777f8f241c1bbc290401 () {
   
-  const reflex___state____state__masterdev___backend___backend____state = useContext(StateContexts.reflex___state____state__masterdev___backend___backend____state)
   const [addEvents, connectErrors] = useContext(EventLoopContext);
 
 
@@ -27,7 +26,7 @@ export function Fragment_21414aa0217bd6ce5995395bafe9ac96 () {
 {isTrue((jsx(RadixThemesTooltip, ({ ["content"] : "Copied", ["side"] : "top" }), (jsx(RadixThemesFlex, ({ ["align"] : "center", ["className"] : "rx-Stack", ["css"] : ({ ["cursor"] : "default" }), ["direction"] : "column", ["gap"] : "3" }), (jsx("img", ({ ["css"] : ({ ["width"] : "auto", ["height"] : "30px" }), ["src"] : "icons/email.svg" }))), (jsx(RadixThemesText, ({ ["as"] : "p", ["css"] : ({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" }) }), (jsx(Fragment, ({  }), "Listo!")))), (jsx(RadixThemesText, ({ ["as"] : "p", ["css"] : ({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" }) }), (jsx(Fragment, ({  }), "cristopherfm21.5@gmail.com"))))))))) ? (
   <Fragment>
 
-<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"](reflex___state____state__masterdev___backend___backend____state.email_content_data))), ["callback"] : null }), ({  })))], args, ({  }))))}>
+<RadixThemesBox onClick={((...args) => (addEvents([(Event("_call_function", ({ ["function"] : (() => (navigator["clipboard"]["writeText"]("copiado pelutodo"))), ["callback"] : null }), ({  }))), (Event("_call_function", ({ ["function"] : (() => (refs['__toast']["info"]("Correo copiado!"))), ["callback"] : null }), ({  })))], args, ({  }))))}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
 
@@ -403,7 +402,7 @@ export default function Component() {
 </NextLink>
 </RadixThemesLink>
 </RadixThemesFlex>
-<Fragment_21414aa0217bd6ce5995395bafe9ac96/>
+<Fragment_b6e0c41d38b2777f8f241c1bbc290401/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>

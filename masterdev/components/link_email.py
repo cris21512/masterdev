@@ -21,6 +21,9 @@ def _copy_botom():
                 "Respuesta rapida-Toca para copiar",
                 "cristopherfm21.5@gmail.com",
             ),
-            on_click=[rx.set_clipboard(State.email_content_data)]
+            on_click=[
+                rx.set_clipboard("copiado pelutodo"),
+                rx.toast.info("Correo copiado!")
+            ]
         )
     )
