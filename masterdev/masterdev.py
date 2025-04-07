@@ -4,7 +4,7 @@ from masterdev.views.navbar import navbar
 from masterdev.views.header import header
 from masterdev.views.work import work
 from masterdev.views.certificados import certificados
-from masterdev.views.technologies import inbox
+from masterdev.views.technologies import technologies
 from masterdev.views.about import about
 from masterdev.views.footer import footer
 from masterdev.styles.styles import STYLESHEETS,BASE_STYLE
@@ -65,8 +65,7 @@ def index() -> rx.Component:
         ),
         rx.center(
             rx.vstack(
-                heading("Contactame"),
-                inbox(),
+                technologies(),
                 align="center"
             ),
             class_name="imbox",

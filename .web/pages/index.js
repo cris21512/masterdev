@@ -2,7 +2,7 @@
 
 
 import { Fragment, useContext } from "react"
-import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
+import { Avatar as RadixThemesAvatar, Box as RadixThemesBox, Button as RadixThemesButton, Card as RadixThemesCard, Flex as RadixThemesFlex, Heading as RadixThemesHeading, Link as RadixThemesLink, Text as RadixThemesText, Tooltip as RadixThemesTooltip } from "@radix-ui/themes"
 import NextLink from "next/link"
 import { jsx } from "@emotion/react"
 import { Event, isTrue, refs } from "$/utils/state"
@@ -313,37 +313,106 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
+<RadixThemesFlex css={({ ["maxWidth"] : "1000px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })} gap={"7"} wrap={"wrap"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"7"}>
+
 <RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
 
-{"Contactame"}
+{"Tecnologias y Herramientas"}
 </RadixThemesHeading>
-<RadixThemesFlex css={({ ["maxWidth"] : "900px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })}>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"7"} wrap={"wrap"}>
 
-<RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"9"}>
+<RadixThemesCard className={"card-technology"}>
 
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/email.svg"}/>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
 
-{"Mi correo publico!"}
+{"Python"}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+<img css={({ ["width"] : "70px", ["height"] : "70px" })} src={"icons/piton.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
 
-{"master.email94@gmail.com"}
+{"Intermedio"}
 </RadixThemesText>
 </RadixThemesFlex>
-<RadixThemesFlex align={"center"} className={"rx-Stack"} css={({ ["cursor"] : "default" })} direction={"column"} gap={"3"}>
+</RadixThemesCard>
+<RadixThemesCard className={"card-technology"}>
 
-<img css={({ ["width"] : "auto", ["height"] : "30px" })} src={"icons/direct.svg"}/>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-{"Correo priv-respuesta rapida"}
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"JavaScript"}
 </RadixThemesText>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "'Bebas Neue'", ["--default-font-family"] : "'Bebas Neue'", ["fontWeight"] : "400", ["color"] : "#ffffff" })}>
+<img css={({ ["width"] : "70px", ["height"] : "70px" })} src={"icons/javascript.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
 
-{"cristopherfm21.5@gmail.com"}
+{"Basico"}
 </RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesCard>
+<RadixThemesCard className={"card-technology"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"html"}
+</RadixThemesText>
+<img css={({ ["width"] : "70px", ["height"] : "70px" })} src={"icons/html.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"Intermedio"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesCard>
+<RadixThemesCard className={"card-technology"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"css"}
+</RadixThemesText>
+<img css={({ ["width"] : "70px", ["height"] : "70px" })} src={"icons/icons8-css.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"Intermedio"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesCard>
+<RadixThemesCard className={"card-technology"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"GitHub"}
+</RadixThemesText>
+<img css={({ ["width"] : "70px", ["height"] : "70px" })} src={"icons/icon-github.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"Basico"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesCard>
+<RadixThemesCard className={"card-technology"}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"reflex"}
+</RadixThemesText>
+<img css={({ ["width"] : "70px", ["height"] : "70px" })} src={"icons/piton.svg"}/>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })} size={"3"}>
+
+{"Intermedio"}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesCard>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
@@ -365,7 +434,7 @@ export default function Component() {
 </RadixThemesHeading>
 <RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
 
-{"Contactame por aca ->"}
+{"Mis redes de contacto ->"}
 </RadixThemesText>
 </RadixThemesFlex>
 </RadixThemesFlex>

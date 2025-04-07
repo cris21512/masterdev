@@ -4,7 +4,6 @@ from masterdev.components.link_imbox import link_inbox
 from masterdev.components.icons import icons
 from masterdev.components.icons_link import link_icons
 from masterdev.components.link_email import _copy_botom
-from masterdev.components.heading import heading
 import masterdev.constants.const as const
 from masterdev.styles.styles import Size
 
@@ -12,7 +11,7 @@ def footer() -> rx.Component:
     return rx.flex(
         rx.hstack(
             link_footer(
-                "Contactame por aca ->"
+                "Mis redes de contacto ->"
             ),
             icons(),
             _copy_botom(),
