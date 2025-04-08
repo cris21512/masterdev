@@ -269,7 +269,7 @@ export default function Component() {
 
 <RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#FOE7D2" })}>
 
-{"Mision"}
+{"Certificados"}
 </RadixThemesHeading>
 </RadixThemesFlex>
 <RadixThemesFlex className={"mision"} css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })}>
@@ -309,7 +309,7 @@ export default function Component() {
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
-<RadixThemesFlex className={"imbox"} css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })}>
+<RadixThemesFlex className={"skills"} css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })}>
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
@@ -418,6 +418,53 @@ export default function Component() {
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>
+<RadixThemesFlex className={"habilidades"} css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center", ["width"] : "100%" })}>
+
+<RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"3"}>
+
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["maxWidth"] : "900px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })} direction={"column"} gap={"5"}>
+
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
+
+{"Habilidades blandas:"}
+</RadixThemesHeading>
+<ul css={({ ["direction"] : "column", ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em", ["listStyleType"] : "disc", ["marginLeft"] : "1.5rem" })}>
+
+<li>
+
+{"Trabajo en equipo"}
+</li>
+<li>
+
+{"Comunicaci\u00f3n efectiva"}
+</li>
+<li>
+
+{"Adaptabilidad"}
+</li>
+<li>
+
+{"Respeto"}
+</li>
+<li>
+
+{"Aprendizaje rapido"}
+</li>
+</ul>
+<RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em", ["listStyleType"] : "disc" })} direction={"column"} gap={"3"}>
+
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
+
+{"Educacion:"}
+</RadixThemesHeading>
+<RadixThemesText as={"p"}>
+
+{" Soy una persona autodidacta. En mi pa\u00eds, estudi\u00e9 un poco de programaci\u00f3n en una escuela, pero la mayor parte de mis conocimientos los \n            adquir\u00ed por mi cuenta, a trav\u00e9s de cursos, proyectos personales y documentaci\u00f3n en l\u00ednea.\n            Actualmente, estoy profundizando en JavaScript para, en el futuro, \n            crear p\u00e1ginas web m\u00e1s profesionales con React. Al ser autodidacta, siempre estoy abierto a nuevas \n            formas de aprendizaje y a desafiarme con nuevos retos\u2026 \u00a1Mi aprendizaje nunca se detiene!   "}
+</RadixThemesText>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
+</RadixThemesFlex>
 <RadixThemesFlex className={"footer"} css={({ ["display"] : "flex", ["alignItems"] : "center", ["justifyContent"] : "center" })}>
 
 <RadixThemesFlex css={({ ["maxWidth"] : "900px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })} justify={"center"} gap={"9"}>
@@ -432,7 +479,7 @@ export default function Component() {
 
 {"Interesado en contactarme?"}
 </RadixThemesHeading>
-<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
+<RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em", ["listStyleType"] : "disc" })}>
 
 {"Mis redes de contacto ->"}
 </RadixThemesText>

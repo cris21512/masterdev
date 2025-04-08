@@ -7,6 +7,7 @@ from masterdev.views.certificados import certificados
 from masterdev.views.technologies import technologies
 from masterdev.views.about import about
 from masterdev.views.footer import footer
+from masterdev.views.habilidades import habilidades
 from masterdev.styles.styles import STYLESHEETS,BASE_STYLE
 import masterdev.styles.styles as style
 
@@ -51,7 +52,7 @@ def index() -> rx.Component:
         ),
         rx.center(
             rx.heading(
-                "Mision",
+                "Certificados",
                 style=style.sub_title_style
             ),
             class_name="small_two"
@@ -68,7 +69,15 @@ def index() -> rx.Component:
                 technologies(),
                 align="center"
             ),
-            class_name="imbox",
+            class_name="skills",
+            width="100%",
+        ),
+        rx.center(
+            rx.vstack(
+                habilidades(),
+                align="center"
+            ),
+            class_name="habilidades",
             width="100%",
         ),
         rx.center(

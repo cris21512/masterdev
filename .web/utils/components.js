@@ -3,26 +3,12 @@
 
 import { memo, useContext } from "react"
 import { E, isTrue, refs } from "$/utils/state"
-import { toast, Toaster } from "sonner"
 import { ColorModeContext } from "$/utils/context"
 import { Box as RadixThemesBox, Text as RadixThemesText } from "@radix-ui/themes"
+import { toast, Toaster } from "sonner"
 
 
 
-
-export const MemoizedToastProvider = memo(({}) => {
-    
-  const { resolvedColorMode } = useContext(ColorModeContext)
-
-  refs['__toast'] = toast
-
-
-
-    return(
-        <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
-      )
-
-})
 
 export const MemoizedBadge = memo(({}) => {
     
@@ -48,6 +34,20 @@ export const MemoizedBadge = memo(({}) => {
 </RadixThemesText>
 </RadixThemesBox>
 </a>
+      )
+
+})
+
+export const MemoizedToastProvider = memo(({}) => {
+    
+  const { resolvedColorMode } = useContext(ColorModeContext)
+
+  refs['__toast'] = toast
+
+
+
+    return(
+        <Toaster closeButton={false} expand={true} position={"bottom-right"} richColors={true} theme={resolvedColorMode}/>
       )
 
 })
