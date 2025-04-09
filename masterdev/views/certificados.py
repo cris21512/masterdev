@@ -7,12 +7,12 @@ def certificados() -> rx.Component:
     return rx.vstack(
         link_mision(
             "/certif_1.png",
-            "Curso de Python desde cero de: Brais moure(Mouredev)",
+            "Curso de JavaScript desde cero de: Brais moure(Mouredev)",
             const.CURSE_1
         ),
         link_mision(
             "/certif_2.png",
-            "Curso de JavaScript desde cero de: Brais moure(Mouredev)",
+            "Curso de Python desde cero de: Brais moure(Mouredev)",
             const.CURSE_2
         ),
         max_width="900px",

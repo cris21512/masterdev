@@ -1,9 +1,11 @@
 import reflex as rx
 import masterdev.styles.styles as styles
 from masterdev.styles.styles import Spacing, Size
+from masterdev.components.icon_teach import icon_techs
+import masterdev.constants.const as const
 
 
-def link_work(title:str,info:str, image:str, url:str) -> rx.Component:
+def link_work(title:str,info:str, image:str, url:str,icon:str, iurl:str) -> rx.Component:
     return rx.flex(
         rx.vstack(
             rx.heading(
@@ -14,6 +16,18 @@ def link_work(title:str,info:str, image:str, url:str) -> rx.Component:
             rx.text(
                 info,
                 style=styles.text_style,
+            ),
+            rx.link(
+                rx.card(
+                    rx.image(
+                        src=icon,
+                        width="40px",
+                        height="40px"
+                    ),
+                    class_name="icon"
+                ),
+                href=iurl,
+                is_external=True
             ),
             spacing=Spacing.DEFAULT.value,
             width="100%"

@@ -85,7 +85,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} className={"text-shine"} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"cristopherfm21.5@gmail.com"} passHref={true}>
+<NextLink href={"mailto:cristopherfm21.5@gmail.com"} passHref={true}>
 
 <RadixThemesText align={"center"} as={"p"} css={({ ["&:hover"] : ({ ["color"] : "#CFC5B0" }), ["color"] : "#8D999" })}>
 
@@ -212,6 +212,16 @@ export default function Component() {
 
 {"Como creador de contenido, he decidido que era hora de hacer nuestra propia web. \n            \u00a1Mi ilusi\u00f3n hecha realidad! \u00bfPor qu\u00e9 pagar por algo que puedes crear t\u00fa mismo? Eso \n            fue lo que pens\u00e9 antes de crear en este proyecto. En esta web encontrar\u00e1s parte del \n            contenido que hemos creado, pensado especialmente para esos d\u00edas en los que no sepas muy bien qu\u00e9 cocinar."}
 </RadixThemesText>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"https://github.com/cris21512/Chito-Y-Cris"} passHref={true}>
+
+<RadixThemesCard className={"icon"}>
+
+<img css={({ ["width"] : "40px", ["height"] : "40px" })} src={"icons/Gitblack.svg"}/>
+</RadixThemesCard>
+</NextLink>
+</RadixThemesLink>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
@@ -243,6 +253,16 @@ export default function Component() {
 
 {"Mi portafolio es la materializaci\u00f3n de un sue\u00f1o, reflejo de todo el esfuerzo que\n            he dedicado para llegar hasta este momento. En \u00e9l encontrar\u00e1s m\u00e1s informaci\u00f3n sobre m\u00ed, \n            las tecnolog\u00edas que domino y detalles sobre mi educaci\u00f3n. Aunque actualmente no tengo experiencia laboral, \n            mis proyectos hablan por s\u00ed solos y demuestran mi esfuerzo y dedicaci\u00f3n."}
 </RadixThemesText>
+<RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
+
+<NextLink href={"https://github.com/cris21512/Master-portfolio"} passHref={true}>
+
+<RadixThemesCard className={"icon"}>
+
+<img css={({ ["width"] : "40px", ["height"] : "40px" })} src={"icons/Gitblack.svg"}/>
+</RadixThemesCard>
+</NextLink>
+</RadixThemesLink>
 </RadixThemesFlex>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
@@ -289,7 +309,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
 
-{"Curso de Python desde cero de: Brais moure(Mouredev)"}
+{"Curso de JavaScript desde cero de: Brais moure(Mouredev)"}
 </RadixThemesHeading>
 </RadixThemesFlex>
 <RadixThemesFlex align={"center"} css={({ ["@media screen and (min-width: 0)"] : ({ ["flexDirection"] : "column" }), ["@media screen and (min-width: 30em)"] : ({ ["flexDirection"] : "column" }), ["width"] : "100%" })} gap={"6"}>
@@ -303,7 +323,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
 
-{"Curso de JavaScript desde cero de: Brais moure(Mouredev)"}
+{"Curso de Python desde cero de: Brais moure(Mouredev)"}
 </RadixThemesHeading>
 </RadixThemesFlex>
 </RadixThemesFlex>

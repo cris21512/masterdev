@@ -13,7 +13,9 @@ def work() -> rx.Component:
             fue lo que pensé antes de crear en este proyecto. En esta web encontrarás parte del 
             contenido que hemos creado, pensado especialmente para esos días en los que no sepas muy bien qué cocinar.""",
             "/project1.svg",
-            const.PROJECT_1
+            const.PROJECT_1,
+            "icons/Gitblack.svg",
+            const.GITPROJECT
         ),
         link_work(
             "Mi portafolio",
@@ -22,7 +24,9 @@ def work() -> rx.Component:
             las tecnologías que domino y detalles sobre mi educación. Aunque actualmente no tengo experiencia laboral, 
             mis proyectos hablan por sí solos y demuestran mi esfuerzo y dedicación.""",
             "/project2.svg",
-            const.PROJECT_2
+            const.PROJECT_2,
+            "icons/Gitblack.svg",
+            const.GITPROJECT2
         ),
         justify_content="center",
         max_width="900px",

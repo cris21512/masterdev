@@ -1381,3 +1381,22 @@
   .cont:hover::before {
     transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
   }
+
+.icon{
+    width: 100%;
+    background: #0052e9;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 3px 3px #4780fc;
+    overflow: hidden;
+    color: var(--bg-color);
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.icon:hover{
+    box-shadow: 0rem 0rem #05060f;
+    translate: 1.5px 1.5px;
+    border:0.5vmin solid #4780fc ;
+}
