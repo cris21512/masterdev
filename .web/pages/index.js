@@ -85,7 +85,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} className={"text-shine"} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"mailto:master.email94@gmail.com"} passHref={true}>
+<NextLink href={"cristopherfm21.5@gmail.com"} passHref={true}>
 
 <RadixThemesText align={"center"} as={"p"} css={({ ["&:hover"] : ({ ["color"] : "#CFC5B0" }), ["color"] : "#8D999" })}>
 
@@ -142,11 +142,11 @@ export default function Component() {
 </RadixThemesText>
 <RadixThemesText as={"p"} className={"text-loading"}>
 
-{"Autodidacta"}
+{"Disponible para trabajar"}
 </RadixThemesText>
 <RadixThemesText as={"p"} className={"text-loading"}>
 
-{"Creador de contenido"}
+{"Mejorando cada dia!"}
 </RadixThemesText>
 </RadixThemesBox>
 </RadixThemesBox>
@@ -175,13 +175,13 @@ export default function Component() {
 
 <RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
 
-{"Soy un chico de 18 a\u00f1os. Vivo en el pa\u00eds de Guatemala, en Villa Nueva. \u00a1Me gusta mucho escuchar m\u00fasica y soy madridista hasta la muerte!"}
+{"Soy un chico de 18 a\u00f1os. Vivo en el pa\u00eds de Guatemala, en Villa Nueva. \u00a1Y asi empezo todo!"}
 </RadixThemesText>
 <RadixThemesText as={"p"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em" })}>
 
 {"Empec\u00e9 en el mundo de la programaci\u00f3n en noviembre del a\u00f1o 2024 (espec\u00edficamente el 23 de noviembre),\n            y desde entonces, mi curiosidad por aprender a programar creci\u00f3. \n            Al principio, como todo novato en el mundo de la programaci\u00f3n, no sab\u00eda muy bien qu\u00e9 podr\u00eda crear o hacer. \n            Pero hoy, con mucha seguridad, puedo decir que soy un desarrollador web Front-end. \n            Desde peque\u00f1o, la tecnolog\u00eda me ha llamado la atenci\u00f3n, as\u00ed que ahora que programo, siento que mi talento \n            y mi curiosidad... \u00a1nunca se acabar\u00e1n!"}
 </RadixThemesText>
-<RadixThemesAvatar className={"card"} css={({ ["width"] : "200px", ["height"] : "300px" })} radius={"medium"} src={"/avatar_two.jpg"}/>
+<RadixThemesAvatar className={"card"} css={({ ["width"] : "auto", ["height"] : "250px" })} radius={"medium"} src={"/foto2.jpg"}/>
 </RadixThemesFlex>
 </RadixThemesFlex>
 </RadixThemesFlex>

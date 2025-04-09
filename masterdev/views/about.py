@@ -8,8 +8,8 @@ from masterdev.styles.styles import Size
 def about() -> rx.Component:
     return rx.flex(
         link_about(
-            "/avatar_two.jpg",
-            "Soy un chico de 18 años. Vivo en el país de Guatemala, en Villa Nueva. ¡Me gusta mucho escuchar música y soy madridista hasta la muerte!",
+            "/foto2.jpg",
+            "Soy un chico de 18 años. Vivo en el país de Guatemala, en Villa Nueva. ¡Y asi empezo todo!",
             """Empecé en el mundo de la programación en noviembre del año 2024 (específicamente el 23 de noviembre),
             y desde entonces, mi curiosidad por aprender a programar creció. 
             Al principio, como todo novato en el mundo de la programación, no sabía muy bien qué podría crear o hacer. 

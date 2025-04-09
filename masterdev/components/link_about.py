@@ -17,8 +17,8 @@ def link_about(image:str, text:str, text_two) -> rx.Component:
             ),
             rx.avatar(
                 src=image,
-                width="200px",
-                height="300px",
+                width="auto",
+                height="250px",
                 radius="medium",
                 class_name="card"
             ),

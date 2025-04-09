@@ -9,7 +9,7 @@ def link_mision(image:str, info:str, url:str) -> rx.Component:
                 rx.image(
                     src=image,
                     width="auto",
-                    height="300px"
+                    height="300px",
                 ),
                 href=url,
                 is_external=True

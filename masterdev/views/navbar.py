@@ -27,7 +27,7 @@ def navbar() -> rx.Component:
                 ),
                 text_barra(
                     "contacto",
-                    const.MAIL,
+                    const.EMAIL_COPY,
                 ),
                 text_barra(
                     "GitHub",

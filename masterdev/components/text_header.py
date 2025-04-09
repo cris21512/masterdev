@@ -22,11 +22,11 @@ def text_header() -> rx.Component:
                     class_name="text-loading"
                 ),
                 rx.text(
-                    "Autodidacta",
+                    "Disponible para trabajar",
                     class_name="text-loading"
                 ),
                 rx.text(
-                    "Creador de contenido",
+                    "Mejorando cada dia!",
                     class_name="text-loading"
                 ),
                 class_name="words"
