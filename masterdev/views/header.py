@@ -13,7 +13,8 @@ def header() -> rx.Component:
         rx.vstack(
             rx.heading(
                 "¡Hola! Soy Cristopher Fuentes... mas conocido como: Master",
-                class_name="title-header"
+                style=styles.title_style,
+                size="8"
             ),
             text_header(),
             class_name="animation-one",

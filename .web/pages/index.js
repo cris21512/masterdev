@@ -114,7 +114,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack animation-one"} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading className={"title-header"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })} size={"8"}>
 
 {"\u00a1Hola! Soy Cristopher Fuentes... mas conocido como: Master"}
 </RadixThemesHeading>
@@ -204,7 +204,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"column"} gap={"4"}>
 
-<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
+<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })}>
 
 {"Web Oficial de: Chito y Cris"}
 </RadixThemesHeading>
@@ -245,7 +245,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["width"] : "100%" })} direction={"column"} gap={"4"}>
 
-<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
+<RadixThemesHeading as={"h1"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })}>
 
 {"Mi portafolio"}
 </RadixThemesHeading>
@@ -307,7 +307,7 @@ export default function Component() {
 <img css={({ ["width"] : "auto", ["height"] : "300px" })} src={"/certif_1.png"}/>
 </NextLink>
 </RadixThemesLink>
-<RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
+<RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })}>
 
 {"Curso de JavaScript desde cero de: Brais moure(Mouredev)"}
 </RadixThemesHeading>
@@ -321,7 +321,7 @@ export default function Component() {
 <img css={({ ["width"] : "auto", ["height"] : "300px" })} src={"/certif_2.png"}/>
 </NextLink>
 </RadixThemesLink>
-<RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
+<RadixThemesHeading as={"h2"} css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })}>
 
 {"Curso de Python desde cero de: Brais moure(Mouredev)"}
 </RadixThemesHeading>
@@ -337,7 +337,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"center"} className={"rx-Stack"} direction={"column"} gap={"7"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })} size={"8"}>
 
 {"Tecnologias y Herramientas"}
 </RadixThemesHeading>
@@ -444,7 +444,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["maxWidth"] : "900px", ["width"] : "100%", ["padding"] : "0.8em", ["marginTop"] : "2em", ["marginBottom"] : "0.8em" })} direction={"column"} gap={"5"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })} size={"8"}>
 
 {"Habilidades blandas:"}
 </RadixThemesHeading>
@@ -473,7 +473,7 @@ export default function Component() {
 </ul>
 <RadixThemesFlex align={"start"} className={"rx-Stack"} css={({ ["fontFamily"] : "Poppins", ["--default-font-family"] : "Poppins", ["color"] : "#FAF3E0", ["fontSize"] : "1.2em", ["listStyleType"] : "disc" })} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })} size={"8"}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })} size={"8"}>
 
 {"Educacion:"}
 </RadixThemesHeading>
@@ -495,7 +495,7 @@ export default function Component() {
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"column"} gap={"3"}>
 
-<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#008bf8" })}>
+<RadixThemesHeading css={({ ["fontFamily"] : "'Raleway', sans-serif", ["--default-font-family"] : "'Raleway', sans-serif", ["fontWeight"] : "600", ["fontStyle"] : "italic", ["color"] : "#4fc3f7" })}>
 
 {"Interesado en contactarme?"}
 </RadixThemesHeading>

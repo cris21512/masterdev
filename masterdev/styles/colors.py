@@ -15,7 +15,7 @@ class Colors(Enum):
     #BLUES/CYANS
     CYAN = "#3EB0F9"
     CYAN_TWO = "#4DCBCD"
-    BLUE = "#008bf8"
+    BLUE = "#4fc3f7"
     BLUE_TWO = "#5DE7D0"
     #REDS
     RED = "#ff0000"
