@@ -2,7 +2,7 @@
 GITHUB = "https://github.com/cris21512"
 LINKEDIN = "https://www.linkedin.com/in/cristopher-fuentes-87868534b/"
 GMAIL = "mailto:master.email94@gmail.com"
-CV = "/CV_CristopherFuentes.pdf"
+CV = "/Cv_CristopherFu..pdf"
 YOUTUBE = "https://www.youtube.com/@RNFUNTS"
 
 # PROYECTOS

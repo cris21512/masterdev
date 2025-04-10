@@ -75,7 +75,7 @@ export default function Component() {
 
 <RadixThemesLink asChild={true} className={"text-shine"} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"/CV_CristopherFuentes.pdf"} passHref={true}>
+<NextLink href={"/Cv_CristopherFu..pdf"} passHref={true}>
 
 <RadixThemesText align={"center"} as={"p"} css={({ ["&:hover"] : ({ ["color"] : "#CFC5B0" }), ["color"] : "#8D999" })}>
 
@@ -529,7 +529,7 @@ export default function Component() {
 </RadixThemesLink>
 <RadixThemesLink asChild={true} css={({ ["&:hover"] : ({ ["color"] : "var(--accent-8)" }) })} target={(true ? "_blank" : "")}>
 
-<NextLink href={"/CV_CristopherFuentes.pdf"} passHref={true}>
+<NextLink href={"/Cv_CristopherFu..pdf"} passHref={true}>
 
 <RadixThemesFlex align={"start"} className={"rx-Stack"} direction={"row"} gap={"3"}>
 
